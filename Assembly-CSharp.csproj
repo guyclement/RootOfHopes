@@ -41,7 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
+     <Compile Include="Assets/Scripts/CameraController.cs" />
+     <Compile Include="Assets/Scripts/PlayerController.cs" />
      <Folder Include="Assets" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/mergetool.ja.txt" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/images.zh-Hans.txt" />
@@ -72,6 +73,7 @@
      <Folder Include="Library/PackageCache/com.unity.ide.rider@3.0.18/Rider" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/semantic.zh-Hant.txt" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/clientcommon.es.txt" />
+     <Folder Include="Library/PackageCache/com.unity.cinemachine@2.8.9" />
      <Folder Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources" />
      <None Include="Library/PackageCache/com.unity.modules.assetbundle@1.0.0/package.json" />
      <None Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/package.json" />
@@ -86,6 +88,8 @@
      <None Include="Library/PackageCache/com.unity.timeline@1.6.4/package.json" />
      <Folder Include="Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/configurehelper.en.txt" />
+     <Folder Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Tests" />
+     <None Include="Library/PackageCache/com.unity.cinemachine@2.8.9/ValidationExceptions.json" />
      <Folder Include="Library/PackageCache/com.unity.visualscripting@1.8.0" />
      <None Include="Library/PackageCache/com.unity.ide.visualstudio@2.0.17/ValidationConfig.json" />
      <Folder Include="Library/PackageCache/com.unity.ext.nunit@1.0.6/net35" />
@@ -175,6 +179,7 @@
      <None Include="Library/PackageCache/com.unity.ide.visualstudio@2.0.17/ValidationExceptions.json" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/cm-help.zh-Hant.txt" />
      <None Include="Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/link.xml" />
+     <None Include="Library/PackageCache/com.unity.cinemachine@2.8.9/license.txt" />
      <None Include="Library/PackageCache/com.unity.modules.wind@1.0.0/package.json" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/clientcommon.zh-Hant.txt" />
      <Folder Include="Library/PackageCache/com.unity.ugui@1.0.0/Tests" />
@@ -192,6 +197,7 @@
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/FileSystemWatcherLicense.txt" />
      <Folder Include="Library/PackageCache/com.unity.modules.androidjni@1.0.0" />
      <Folder Include="Library/PackageCache/com.unity.performance.profile-analyzer@1.1.1/Tests" />
+     <Folder Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Gizmos" />
      <Folder Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources/Gizmos" />
      <None Include="Library/PackageCache/com.unity.modules.audio@1.0.0/package.json" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/cm-help.ko.txt" />
@@ -245,6 +251,7 @@
      <Folder Include="Library/PackageCache/com.unity.settings-manager@1.0.3/Content" />
      <None Include="Library/PackageCache/com.unity.modules.terrain@1.0.0/package.json" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/commontypes.ko.txt" />
+     <None Include="Library/PackageCache/com.unity.cinemachine@2.8.9/package.json" />
      <Folder Include="Library/PackageCache/com.unity.ide.visualstudio@2.0.17" />
      <None Include="Library/PackageCache/com.unity.modules.androidjni@1.0.0/package.json" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/commontypes.ja.txt" />
@@ -278,8 +285,10 @@
      <Folder Include="Library/PackageCache/com.unity.modules.unitywebrequesttexture@1.0.0" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/cm.zh-Hant.txt" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/xdiff.en.txt" />
+     <Folder Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Presets/Noise" />
      <Folder Include="Library/PackageCache/com.unity.ugui@1.0.0" />
      <Folder Include="Library/PackageCache/com.unity.settings-manager@1.0.3/Tests" />
+     <Folder Include="Library/PackageCache/com.unity.cinemachine@2.8.9/Presets" />
      <None Include="Library/PackageCache/com.unity.modules.ui@1.0.0/package.json" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/semantic.zh-Hans.txt" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/localization/i3.ko.txt" />
@@ -985,9 +994,17 @@
       <Project>{d1fd6465-1e46-496c-52f3-74c0802e8599}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{3ae5d57d-3e9a-27c4-ba8e-2277ff6f6ee8}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
       <Project>{c99633ce-0c96-134e-c469-1555dc77e2dc}</Project>
       <Name>Unity.Services.Core.Analytics</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{beb47383-ba43-73e2-d3a7-f7e7c87041d0}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{a5e5e01f-5db9-d62f-5f72-c8ff372505cd}</Project>

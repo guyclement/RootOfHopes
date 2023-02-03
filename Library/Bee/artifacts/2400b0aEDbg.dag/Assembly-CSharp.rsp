@@ -319,6 +319,7 @@
 -r:"/home/sunken/Unity/Hub/Editor/2021.3.17f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll"
 -r:"/home/sunken/Unity/Hub/Editor/2021.3.17f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll"
 -r:"/home/sunken/Unity/Hub/Editor/2021.3.17f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
+-r:"Library/Bee/artifacts/2400b0aEDbg.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -345,7 +346,9 @@
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/Unity.VisualStudio.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/PlayerMovement.cs"
+-r:"Library/Bee/artifacts/2400b0aEDbg.dag/com.unity.cinemachine.editor.ref.dll"
+"Assets/Scripts/CameraController.cs"
+"Assets/Scripts/PlayerController.cs"
 -langversion:9.0
 
 /deterministic
