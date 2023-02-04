@@ -348,6 +348,7 @@
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/com.unity.cinemachine.editor.ref.dll"
 "Assets/Scripts/CameraController.cs"
+"Assets/Scripts/DoorOpening.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:9.0
 
