@@ -347,9 +347,18 @@
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aEDbg.dag/com.unity.cinemachine.editor.ref.dll"
+"Assets/PhysicalCharacterController/Scripts/CameraController.cs"
+"Assets/PhysicalCharacterController/Scripts/PhysicalCC.cs"
+"Assets/PhysicalCharacterController/Scripts/PlatformMovement.cs"
+"Assets/PhysicalCharacterController/Scripts/PlayerInput.cs"
+"Assets/Scripts/BagController.cs"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/DoorOpening.cs"
+"Assets/Scripts/EasierContainer.cs"
+"Assets/Scripts/EnnemiesSpawner.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/backpackController.cs"
+"Assets/Scripts/dropContainer.cs"
 -langversion:9.0
 
 /deterministic

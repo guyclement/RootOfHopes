@@ -14,6 +14,8 @@ public class PlayerController: MonoBehaviour
     public float jumpCooldown;
     public float airMultiplier;
     bool readyToJump;
+    public Camera camera;
+    public float maxDistance;
 
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
@@ -33,7 +35,7 @@ public class PlayerController: MonoBehaviour
 
     Vector3 moveDirection;
 
-    Rigidbody rb;
+    public Rigidbody rb;
 
     private void Start()
     {
@@ -41,12 +43,14 @@ public class PlayerController: MonoBehaviour
         rb.freezeRotation = true;
 
         readyToJump = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
     {
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, Vector3.down , maxDistance, whatIsGround);
+        Debug.DrawRay(transform.position, Vector3.down * maxDistance,  Color.blue);
 
         MyInput();
         SpeedControl();
@@ -61,9 +65,9 @@ public class PlayerController: MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+        RotatePlayer();
     }
 
-    // ReSharper disable Unity.PerformanceAnalysis
     private void MyInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -80,17 +84,25 @@ public class PlayerController: MonoBehaviour
         }
     }
 
+    private void RotatePlayer()
+    {
+            Quaternion _CameraRot = camera.transform.rotation;
+            _CameraRot.x = 0;
+            _CameraRot.z = 0;
+            transform.rotation = _CameraRot;
+    }
+
     private void MovePlayer()
     {
         // calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
+        moveDirection = camera.transform.forward * verticalInput + camera.transform.right * horizontalInput;
+        moveDirection.y = 0;
         // on ground
-        if(grounded)
+        if(!grounded)
             rb.AddForce(moveDirection.normalized * (moveSpeed * 10f), ForceMode.Force);
 
         // in air
-        else if(!grounded)
+        else if(grounded)
             rb.AddForce(moveDirection.normalized * (moveSpeed * 10f * airMultiplier), ForceMode.Force);
     }
 
